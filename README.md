@@ -14,7 +14,7 @@ Got tired of sitting ready every Sunday to sign up for next week's kickboxing cl
 
 2. **Class Data Extraction** 📋
    - Fetches the class signup page
-   - Cleans the HTML (removes scripts, styles, comments)
+   - Cleans the HTML (removes scripts, styles, comments) to reduce token usage
    - Uses OpenAI to intelligently parse the cleaned HTML for class details
    - This approach is more resilient to HTML structure changes compared to fixed BeautifulSoup selectors!
 
@@ -24,11 +24,7 @@ Got tired of sitting ready every Sunday to sign up for next week's kickboxing cl
      - Schedule IDs
      - Start dates
      - Required action parameters
-   - This makes the script more maintainable and resistant to website updates
-
-4. **Automatic Signup** ✍️
-   - Executes signup requests for each desired class
-   - Provides feedback on success/failure
+   - This makes the script more maintainable and resistant to website updates 
 
 ## 🔧 Setup
 1. Create `.env`:
