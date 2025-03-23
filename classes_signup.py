@@ -112,9 +112,9 @@ def sign_up_for_classes(client: WebsiteClient, classes_data: dict):
 
 def next_tuesday():
     today = datetime.now() + timedelta(hours=1)  # GMT+1
-    days_ahead = 1 - today.weekday()  # Tuesday is 1
-    if days_ahead <= 0:  # If it's Tuesday or later
-        days_ahead += 7  # next week's Tuesday
+    days_ahead = 1 - today.weekday()  
+    if days_ahead <= 0: 
+        days_ahead += 7  
     next_tuesday = today + timedelta(days=days_ahead)
     return next_tuesday.date().isoformat()
 
