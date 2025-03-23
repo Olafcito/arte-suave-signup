@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "website-client"
+version = "0.1.0"
+description = "A client for automating website interactions"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+openai = "^1.68.2"
+beautifulsoup4 = "^4.13.3"
+tiktoken = "^0.9.0"
+lxml = "^5.3.1"
+pyyaml = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.7.0"
+isort = "^5.12.0"
+debugpy = "^1.6.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
