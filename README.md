@@ -47,7 +47,7 @@ classes:
 
 3. Run:
 ```bash
-python classes_signup.py
+poetry run python classes_signup.py
 ```
 
 
